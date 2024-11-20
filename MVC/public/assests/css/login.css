@@ -1,0 +1,75 @@
+/* Pozadí stránky */
+body {
+    background-color: #f7f9fc; /* Světle šedá s nádechem modré */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Karta formuláře */
+.custom-card {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px 30px;
+}
+
+/* Nadpis formuláře */
+.card-body h3 {
+    font-weight: 600;
+    color: #555;
+}
+
+/* Vstupní pole */
+.custom-input {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Zvýraznění při focusu */
+.custom-input:focus {
+    border-color: #007bff; /* Modrý akcent */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Tlačítko */
+.custom-button {
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #007bff; /* Jemná modrá */
+    border: none;
+    color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover efekt tlačítka */
+.custom-button:hover {
+    background-color: #0056b3; /* Tmavší modrá */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+/* Stín karty */
+.custom-card {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animace při načtení */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

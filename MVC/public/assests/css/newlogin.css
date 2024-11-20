@@ -1,0 +1,62 @@
+/* Celkové pozadí */
+body {
+    
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* Styl karty formuláře */
+.custom-card {
+    border-radius: 15px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(118, 118, 118);
+}
+
+/* Hlavička karty */
+.custom-header {
+    background-color: #2575fc;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+    padding: 15px;
+    box-shadow: 0 0 10px rgb(118, 118, 118);
+}
+
+/* Styl vstupních polí */
+.custom-input {
+    border: 2px solid #2575fc;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgb(118, 118, 118);
+}
+
+/* Zvýraznění při focusu */
+.custom-input:focus {
+    outline: none;
+    border-color: #6a11cb;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.5);
+}
+
+/* Tlačítko */
+.custom-button {
+    background-color: #6a11cb;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover efekt tlačítka */
+.custom-button:hover {
+    background-color: #2575fc;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Stín karty */
+.shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
