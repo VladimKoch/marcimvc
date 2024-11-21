@@ -4,7 +4,8 @@
 
 // use \Model\Functions as Functions;
 
-
+use \Model\Dbcreator;
+use \Core\App;
 
 // echo phpversion();
 
@@ -29,8 +30,14 @@ require "../app/core/init.php";
 // DEBUG ? ini_Set('display_errors',1) : ini_Set('display_errors',0);
 
 
-$app = new \Core\App;
+$app = new App;
 $app->loadController();
+
+
+
+$db = new Dbcreator;
+$db->tablecreate();
+
 
 
 

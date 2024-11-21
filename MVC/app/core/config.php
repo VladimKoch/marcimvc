@@ -4,6 +4,7 @@
 
 
 defined('ROOTPATH') or exit('No direct script acces allowed');
+
 if((empty($_SERVER['SERVER_NAME']) && php_sapi_name() == 'cli') || (!empty($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] == 'localhost'))
     {   
         

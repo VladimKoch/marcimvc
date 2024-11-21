@@ -16,6 +16,7 @@ defined('ROOTPATH') or exit('No direct script acces allowed');
     
     require 'config.php';
     require 'functions.php';
+    require 'Dbcreator.php';
     require 'Database.php';
     require 'Model.php';
     require 'ModelResponses.php';

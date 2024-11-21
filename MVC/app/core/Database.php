@@ -8,8 +8,7 @@ defined('ROOTPATH') or exit('No direct script acces allowed');
 Trait Database
 {
 
-    // public $db_name = 'my_db';
-  
+
     private function connect()
         {
             $string = "mysql:hostname=".DBHOST.";dbname=".DBNAME;
@@ -36,6 +35,11 @@ Trait Database
             return false;
         }
 
+    public function tableCreate(string $dbname)
+    {
+        $con = $this->connect();
+    }
+
     public function get_row($query, $data = [])
         {
             $con = $this->connect();
@@ -57,3 +61,5 @@ Trait Database
         }
 
 }
+
+
